@@ -2,14 +2,14 @@
 
 ## LoRaWAN Gateways
 
-- [297.38 € - Dragino DLOS8N Outdoor LoRaWAN Gateway](https://iot-shop.de/en/shop/dragino-dlos8n-outdoor-lorawan-gateway-5841?category=7&search=LoRaWAN+Gateway#attr=17051,20022,6145,20023,14699)
+- [€297.38 - Dragino DLOS8N Outdoor LoRaWAN Gateway](https://iot-shop.de/en/shop/dragino-dlos8n-outdoor-lorawan-gateway-5841?category=7&search=LoRaWAN+Gateway#attr=17051,20022,6145,20023,14699)
 
 There are some lightning arrestors available, but let's not worry about that for now.
 
 ## Sensors
-- [37.96 € - Dragino LHT65N-PIR LoRaWAN Temperature , Humidity & PIR Motion Sensor](https://iot-shop.de/en/shop/dg-lht65n-pir-dragino-lht65n-pir-lorawan-temperature-humidity-pir-motion-sensor-6483?search=pir++lorawan&order=name+asc#attr=21376,19940,18274,18275,10944)
+- [€37.96 - Dragino LHT65N-PIR LoRaWAN Temperature , Humidity & PIR Motion Sensor](https://iot-shop.de/en/shop/dg-lht65n-pir-dragino-lht65n-pir-lorawan-temperature-humidity-pir-motion-sensor-6483?search=pir++lorawan&order=name+asc#attr=21376,19940,18274,18275,10944)
 
-- [Milesight EM300-DI LoRaWAN Pulse Counter](https://iot-shop.de/en/shop/mil-em300-di-milesight-em300-di-lorawan-pulse-counter-6132#attr=22806,19024,19025,19019,19020,19021,19022,19653,14871)
+- [€58.90 Milesight EM300-DI LoRaWAN Pulse Counter](https://iot-shop.de/en/shop/mil-em300-di-milesight-em300-di-lorawan-pulse-counter-6132#attr=22806,19024,19025,19019,19020,19021,19022,19653,14871)
 
 ## Electricity meters
 
