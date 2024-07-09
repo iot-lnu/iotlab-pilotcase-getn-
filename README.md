@@ -15,7 +15,11 @@ The gateway we will use in the pilot case is the Dragino DLOS8N Outdoor LoRaWAN 
 | <img src="images/lorawan_gateway.png" width="145" height="100"> | Dragino DLOS8N Outdoor LoRaWAN Gateway | [€297.38 - Dragino DLOS8N Outdoor LoRaWAN Gateway](https://iot-shop.de/en/shop/dragino-dlos8n-outdoor-lorawan-gateway-5841?category=7&search=LoRaWAN+Gateway#attr=17051,20022,6145,20023,14699) |
 | --------------------------------------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-## LoRaWAN Sensors
+## LoRaWAN Sensor(s)
+
+| Image                                                 | Product Name                             | Description                                                             | Price and Link                                                                                                                                                                                         |
+| ----------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="images/EM300.png" width="145" height="100"> | Milesight EM300-DI LoRaWAN Pulse Counter | LoRaWAN sensor that counts pulses and measures temperature and humidity | [€58.90 - Milesight EM300-DI LoRaWAN Pulse Counter](https://iot-shop.de/en/shop/mil-em300-di-milesight-em300-di-lorawan-pulse-counter-6132#attr=22806,19024,19025,19019,19020,19021,19022,19653,14871) |
 
 ### Electricity meters
 
