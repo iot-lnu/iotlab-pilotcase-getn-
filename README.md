@@ -1,36 +1,65 @@
-# iotlab-pilotcase-getn
+# iotlab-pilotcase-getno
 
-## LoRaWAN Gateways
+- [iotlab-pilotcase-getno](#iotlab-pilotcase-getno)
+  - [LoRaWAN Gateway](#lorawan-gateway)
+  - [LoRaWAN Sensors](#lorawan-sensors)
+    - [Electricity meters](#electricity-meters)
+  - [Getting started](#getting-started)
+  - [Maintenance](#maintenance)
+    - [Keep DC balance above 0](#keep-dc-balance-above-0)
 
-- [€297.38 - Dragino DLOS8N Outdoor LoRaWAN Gateway](https://iot-shop.de/en/shop/dragino-dlos8n-outdoor-lorawan-gateway-5841?category=7&search=LoRaWAN+Gateway#attr=17051,20022,6145,20023,14699)
+## LoRaWAN Gateway
 
-There are some lightning arrestors available, but let's not worry about that for now.
+The gateway we will use in the pilot case is the Dragino DLOS8N Outdoor LoRaWAN Gateway (8 channels). The gateway is IP65-rated and can be mounted on a pole or wall.
 
-## Sensors
-- [€37.96 - Dragino LHT65N-PIR LoRaWAN Temperature , Humidity & PIR Motion Sensor](https://iot-shop.de/en/shop/dg-lht65n-pir-dragino-lht65n-pir-lorawan-temperature-humidity-pir-motion-sensor-6483?search=pir++lorawan&order=name+asc#attr=21376,19940,18274,18275,10944)
+| <img src="images/lorawan_gateway.png" width="145" height="100"> | Dragino DLOS8N Outdoor LoRaWAN Gateway | [€297.38 - Dragino DLOS8N Outdoor LoRaWAN Gateway](https://iot-shop.de/en/shop/dragino-dlos8n-outdoor-lorawan-gateway-5841?category=7&search=LoRaWAN+Gateway#attr=17051,20022,6145,20023,14699) |
+| --------------------------------------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-- [€58.90 Milesight EM300-DI LoRaWAN Pulse Counter](https://iot-shop.de/en/shop/mil-em300-di-milesight-em300-di-lorawan-pulse-counter-6132#attr=22806,19024,19025,19019,19020,19021,19022,19653,14871)
+## LoRaWAN Sensors
 
-## Electricity meters
+### Electricity meters
 
 The following table lists all 12 electricity meters with their respective meter numbers, meter types, and status.
 
-| NR. | Cottage         | Brand and model | Status: | Note:                    |
-| --- | --------------- | --------------- | ------- | ------------------------ |
-| 3   | Gäddstugan      | Garo GMN3D      | ok      | [Definitions](gnm3d.pdf) |
-| 4   | Fågelstugan     | Garo GMN3D      | ok      | [Definitions](gnm3d.pdf) |
-| 5   | Abborrestugan   | Garo GMN3D      | ok      | [Definitions](gnm3d.pdf) |
-| 8   | Hönshuset       | Garo GMN3D      | ok      | [Definitions](gnm3d.pdf) |
-| 12  | Rättarebostaden | ABB OD4165      | ok      |                          |
-| 13  | Grytet          | ABB 0D4165      | ok      |                          |
-| 14  | Älgen           | Garo GMN3D      | ok      | [Definitions](gnm3d.pdf) |
-| 15  | Rådjuret        | Garo GMN3D      | ok      | [Definitions](gnm3d.pdf) |
-| 16  | Räven           | Garo GMN3D      | ok      | [Definitions](gnm3d.pdf) |
-| 17  | Haren           | Garo GMN3D      | ok      | [Definitions](gnm3d.pdf) |
-| 18  | Kronhjorten     | Garo GMN3D      | ok      | [Definitions](gnm3d.pdf) |
+| NR. | Cottage         | Brand and model | Status: | Note: |
+| --- | --------------- | --------------- | ------- | ----- |
+| 3   | Gäddstugan      | Garo GMN3D      | ok      |       |
+| 4   | Fågelstugan     | Garo GMN3D      | ok      |       |
+| 5   | Abborrestugan   | Garo GMN3D      | ok      |       |
+| 8   | Hönshuset       | Garo GMN3D      | ok      |       |
+| 12  | Rättarebostaden | ABB OD4165      | ok      |       |
+| 13  | Grytet          | ABB 0D4165      | ok      |       |
+| 14  | Älgen           | Garo GMN3D      | ok      |       |
+| 15  | Rådjuret        | Garo GMN3D      | ok      |       |
+| 16  | Räven           | Garo GMN3D      | ok      |       |
+| 17  | Haren           | Garo GMN3D      | ok      |       |
+| 18  | Kronhjorten     | Garo GMN3D      | ok      |       |
 
-### Temperature and humidity sensors
+## Getting started
 
-### Presence sensors
+1. Update the firmware on the Dragino DLOS8N Outdoor LoRaWAN Gateway, visit [this guide](md/firmware.md).
 
-### GPS trackers
+2. Configure the Dragino DLOS8N Outdoor LoRaWAN Gateway for the Helium network, visit [this guide](md/helium.md).
+
+3. Use the pre-onboarded key, visit [this guide](md/pre-onboarded.md).
+
+4. Log into helium console (chirpstack), visit [this guide](md/console.md).
+
+5. Map the coverage of the gateway, visit [this guide](md/coverage.md).
+
+## Maintenance
+
+To keep the whole system running, there are a few things to keep in mind.
+
+### Keep DC balance above 0
+
+Every time a sensors sends a message (uplink), the Data Credit (DC) balance is decreased. The size of the message determines how many DCs are used. One Data Credit equals $0.00001 USD or 0,00011 SEK.
+
+| Byte Range  | Number of DCs |
+| ----------- | ------------- |
+| 0-24 bytes  | 1 DC          |
+| 25-48 bytes | 2 DC          |
+| ...         | ...           |
+| 241 bytes   | 11 DC         |
+
+This table presents the relationship between byte ranges and the corresponding number of DCs (presumably "Data Cells" or similar). More on that in the [DC Documentation page](https://docs.helium.com/tokens/data-credit/).
