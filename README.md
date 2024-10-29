@@ -39,7 +39,9 @@ The following table lists all 12 electricity meters with their respective meter 
 | 17  | Haren           | Garo GMN3D      | ok      |       |
 | 18  | Kronhjorten     | Garo GMN3D      | ok      |       |
 
-## Getting started
+## Getting startedi
+
+[Here](https://resource.milesight.com/milesight/iot/document/em300-series-user-guide-en.pdf) is the user guide for the sensor.
 
 1. Update the firmware on the Dragino DLOS8N Outdoor LoRaWAN Gateway, visit [this guide](md/firmware.md).
 
@@ -50,6 +52,12 @@ The following table lists all 12 electricity meters with their respective meter 
 4. Log into helium console (chirpstack), visit [this guide](md/console.md).
 
 5. Map the coverage of the gateway, visit [this guide](md/coverage.md).
+
+**Notice:** The value for the pulse is called `water` in the decoder.
+
+## Datacake integration
+
+To integrate the data from the sensors to Datacake, follow the steps below.
 
 ## Maintenance
 
@@ -67,3 +75,14 @@ Every time a sensors sends a message (uplink), the Data Credit (DC) balance is d
 | 241 bytes   | 11 DC         |
 
 This table presents the relationship between byte ranges and the corresponding number of DCs (presumably "Data Cells" or similar). More on that in the [DC Documentation page](https://docs.helium.com/tokens/data-credit/).
+
+## Lora coverage
+
+The gateway is was installed on top of the reception building.
+
+here is a image of the coverage map
+TODO: ADD points on the map for the locations for the motions sensors.
+![coverage map](images/covrage_map.png)
+
+For the area with the cabins which is relative close the the gateway the coverage is good.
+There is two spots in the island that is of interest for a motion detection sensor. One of the spots had relative bad coverage and the other spot had not coverage at all. On the way to the point on the north side of the island the signal diapered about a third of the way there. As we did the coverage test in the fall season there is no guarantee that there will be coverage in the summer sine the trees will have leaves.
