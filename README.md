@@ -86,3 +86,17 @@ TODO: ADD points on the map for the locations for the motions sensors.
 
 For the area with the cabins which is relative close the the gateway the coverage is good.
 There is two spots in the island that is of interest for a motion detection sensor. One of the spots had relative bad coverage and the other spot had not coverage at all. On the way to the point on the north side of the island the signal diapered about a third of the way there. As we did the coverage test in the fall season there is no guarantee that there will be coverage in the summer sine the trees will have leaves.
+
+### Options for temperature sensors
+
+Here are some options for temperature and humidity sensors that are compatible with LoRaWAN. These sensors are designed for indoor use and offer good battery life.
+
+| Sensor | Battery time  | Price | Link |
+|-----------|---------|----------|-----|
+| Milesight EM320-TH | ≥ 5 år | 855 sek | [Here](https://www.direktronik.se/direktronik/overvakning/automationscada/lorawan/temperatur-luftfuktighetsensor-for-livsmedel--lakemedel/?variationCode=20113574) |
+| Dragino LHT65 | upp till 10 år | 611 sek | [Here](https://www.direktronik.se/direktronik/overvakning/automationscada/lorawan/temperatur--luftfuktighet-med-inbyggt-minne-lorawan/?variationCode=20115167)| 
+| Dragino LHT52 | upp till några år | 433 sek | [Here](https://www.direktronik.se/direktronik/overvakning/automationscada/lorawan/temperatur--luftfuktighet-inomhus-lorawan/?variationCode=20114943)|
+| Milesight EM300-TH| upp till 5 år | 742 sek | [Here](https://www.direktronik.se/direktronik/overvakning/automationscada/lorawan/lorawan-utomhussensor-temperatur-och-luftfuktighet/?variationCode=20104287)|
+| Tabs temperature and humidity sensor | upp till 16 månader | 594 sek | [Here](https://www.direktronik.se/direktronik/overvakning/automationscada/lorawan/temperatur--luftfuktighetssensor-lorawan/?variationCode=20117142)|
+
+
